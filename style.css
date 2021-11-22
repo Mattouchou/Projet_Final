@@ -1,0 +1,40 @@
+test
+e7230a6
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-image: url(./médias/photos/taverne.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+nav {
+  display: flex;
+  background-image: url("./médias/photos/31043584-vieille-taverne-médiévale-vierge-panneau-en-bois-isolé-removebg-preview.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  justify-content: space-around;
+  transform: rotate(10deg);
+  align-items: flex-end;
+  height: 311px;
+  width: 40%;
+  margin-top: -60px;
+  margin-left: 812px;
+  border-bottom: 1px solid rgba(51, 51, 51, 0.138);
+}
+nav .logo h1 {
+  font-size: 50px;
+  font-family: "Olondon";
+  margin-left: 75px;
+  color: black;
+  text-shadow: 2px 2px 2px rgba(241, 160, 38, 0.59);
+  margin-bottom: 15px;
+}
+nav .dragon img {
+  width: 50%;
+  margin-bottom: 26px;
+  margin-left: 34px;
+}
