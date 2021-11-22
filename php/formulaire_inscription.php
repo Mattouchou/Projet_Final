@@ -1,12 +1,12 @@
 <style>
     @font-face {
         font-family: "Olondon";
-        src: url("../../Projet_final1/fonts/Olondon_.otf");
+        src: url("../fonts/Olondon_.otf");
     }
 
     @font-face {
         font-family: "Seagram";
-        src: url("../../Projet_final1/fonts/Seagramtfb.ttf");
+        src: url("../fonts/Seagramtfb.ttf");
     }
 
     * {

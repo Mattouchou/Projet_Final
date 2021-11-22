@@ -1,13 +1,25 @@
+<style>
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
 
-<html>
-<body>
-<video autoplay muted loop style="
-    margin-left: 0px;
-    size: contain;
-    background-size: cover;
-    width: 100%;
-    height: 100%;
-">
+    video#test {
+   position:fixed; 
+   right: 0; 
+   bottom: 0;
+   min-width: 100%;
+   width: auto;
+   height: auto;
+   z-index:-100;
+   background: no-repeat;
+   background-size:cover;
+    }
+</style>
+
+<video autoplay muted loop style id="test">
+
     <source src="../médias/video/Medieval Fantasy Tavern  D&D Fantasy Music and Ambience.mp4" type="video/mp4" ></video>          
 <div>
 <?php
