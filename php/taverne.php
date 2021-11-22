@@ -1,5 +1,4 @@
-test
-e7230a6
+
 <html>
 <body>
 <video autoplay muted loop style="
@@ -9,7 +8,7 @@ e7230a6
     width: 100%;
     height: 100%;
 ">
-    <source src="../médias/videos/Medieval Fantasy Tavern  D&D Fantasy Music and Ambience.mp4" type="video/mp4" ></video>          
+    <source src="../médias/video/Medieval Fantasy Tavern  D&D Fantasy Music and Ambience.mp4" type="video/mp4" ></video>          
 <div>
 <?php
 require './database.php';

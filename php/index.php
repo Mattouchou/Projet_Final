@@ -1,4 +1,54 @@
+<!DOCTYPE html>
+<html lang="fr">
 
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="icon" href="médias/photos/Icônes.png">
+    <title>L'Hydromel des Gueux</title>
+</head>
+
+<body>
+    <nav>
+        <div class="logo">
+            <h1> L'Hydromel <br> des gueux ! </h1>
+        </div>
+        <div class="dragon">
+            <img src="../médias/photos/dragon 2.png"> </div>
+        <ul class="nav-liste">
+            <li>
+                <a href="./connexion.php">Connexion</a>
+            </li>
+            <br>
+            <li>
+                <a href="./inscription.php">Inscription</a>
+            </li>
+        </ul>
+    </nav>
+    <br>
+    <header>
+        <div class="titre">
+            <h2> Présentation </h2>
+        </div>
+        <br>
+        <div class="presentation">
+            <p>
+                Bienvenue sur L'hydromel des Gueux ! La Taverne déjanté qui changera vos déprimantes soirées d'hiver en chaleureuses et festives épopées en ligne !
+                <br>
+                <br>
+                Nous avons concocté spécialement un site pour vous, néophyte comme vieux croulant, afin de vous aider dans vos nouvelles aventures composées d'histoire, 
+                de quêtes et d'échec critique !
+                <br>
+                <br>
+                Ici, vous serez tous respectés ... Comme les gueux le sont ! Nous sommes tous logés à la même enseigne ( sauf les admins, ces tyrans ... ). 
+                <br>
+                <br>
+                Dans notre modeste taverne, les bières sont offertes ... ou presque ! Quand vous participez à l'hilarité générale au sein de l'anarchie de la taverne, 
+                tu mérites une certaine récompense ! 
+                Profites en pour remplir ta panse à bière et t'amuser avec les bougres qui t'entourent ! 
+                Qui plus est, notre politique étant de féliciter les grandes gueules, si vous arrivez à cumuler assez de binouze dans votre sang, 
                 vous pouvez passer un cap de réputation supérieur et faire votre malin avant de tomber dans le ravin.
                 <br>
                 <br>
@@ -18,7 +68,7 @@
                 Le tavernier n'hésitera pas une seconde à vous jeter dans la geôle situé à la cave pour une durée indéterminée ( Ces admins, de vrais truands ... )
                 <br>
                 <br>
-                Maintenant que vous êtes prévenus, n’hésitez pas à venir descendre des pintes avec nous, et que la partie commence !
+                Maintenant que vous êtes prévenus, n’hésitez pas à venir descendre des pintes avec nous, et que la partie commence !
                 <br>
                 <br>
             </p>
