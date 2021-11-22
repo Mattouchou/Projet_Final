@@ -1,0 +1,1 @@
+<img src="../médias/photos/bibliothèque.jpg">

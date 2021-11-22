@@ -26,7 +26,7 @@ elseif(($_POST['password']) != ($_POST['confirm_pass'])){
 }
 else{
     require "./database.php";
-    $req = $pdo->prepare("INSERT INTO users SET pseudo = ?, nom = ?, prenom = ?, mail = ?, password = ?, user_kind = 2");
+    $req = $pdo->prepare("INSERT INTO users SET pseudo = ?, nom = ?, prenom = ?, mail = ?, password = ?, user_kind = 2, biere = 0");
     $password = password_hash($_POST['password'], PASSWORD_BCRYPT);
     $req->execute([$_POST['pseudo'], $_POST['nom'], $_POST['prenom'],$_POST['mail'], $password]);
     header('location:./connexion.php');
@@ -36,4 +36,5 @@ else{
 if(isset($errors)){
     $_SESSION['erreur'] = $errors;
     header('location:./index.php');
+}
     ?>

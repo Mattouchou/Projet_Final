@@ -1,0 +1,1 @@
+<img src="../médias/photos/Cuisine_taverne.jpg">

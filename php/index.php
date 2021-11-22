@@ -23,7 +23,7 @@
             </li>
             <br>
             <li>
-                <a href="./inscription.php">Inscription</a>
+                <a href="./formulaire_inscription.php">Inscription</a>
             </li>
         </ul>
     </nav>
