@@ -1,7 +1,6 @@
 
 <?php
 include './fonction_valid_donnees.php';
-
 if(!empty($_POST)){
     $errors = array();
     if(empty($_POST['pseudo'])){
@@ -34,10 +33,7 @@ else{
     exit();
 }
 }
-
 if(isset($errors)){
     $_SESSION['erreur'] = $errors;
     header('location:./index.php');
-} 
-
-?>
+    ?>
