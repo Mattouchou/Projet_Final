@@ -14,7 +14,7 @@
 require './database.php';
 ?>
 <?php
-session_start()
+session_start();
 ?>
 <?=$_SESSION['pseudo'] ?>
 <br>
@@ -23,7 +23,9 @@ session_start()
 <?=$_SESSION['biere'] ?>
 <br>
 <?=$_SESSION['bourse'] ?>
+
 </div>
 <a href="./gest_acc.php"><img src="../médias/photos/Lhydromel_des_gueux.png"></a>
+<a href="./couloir.php"><button>Vers le couloir</button>
 </body>
 </html>

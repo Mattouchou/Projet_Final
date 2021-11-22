@@ -33,16 +33,13 @@
     }
 
     label {
-        font-size: 50px;
-        font-family: "Seagram";
+        font-size: 24px;
     }
-
     input {
         border-radius: 31px;
-        padding: 12px 53px;
+        padding : 12px 53px;
         font-size: 15px;
     }
-
     form {
         margin-top: 150px;
         display: flex;
