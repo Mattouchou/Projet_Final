@@ -115,35 +115,22 @@
 
     <source src="../médias/video/Medieval Fantasy Tavern  D&D Fantasy Music and Ambience.mp4" type="video/mp4"></video>
 
-<a href="./gest_acc.php"><img src="../médias/photos/Lhydromel_des_gueux.png"></a>
+<a href="#"><img src="../médias/photos/Lhydromel_des_gueux.png"></a>
 
 <br>
 <br>
 <a href="./couloir.php" class="saut"><button>Vers le couloir</button></a> 
-<a href="#" class="buzz"><button>Déconnexion</button></a>
+<a href="./deco.php" class="buzz"><button>Déconnexion</button></a>
 <br>
 <br>
 <?php
-require './database.php';
-session_start();
-if(isset($_SESSION['pseudo']));
-
-    else{
-        header('location: ./index.php');
-    }
-    ?>
-<?php
-    require './database.php';
-    $username = $_SESSION['pseudo'];
-    $req = $pdo->query("SELECT * FROM users WHERE pseudo = '$username'");
-    while($data = $req->fetch()){
-        echo "<p> Bonjour $data->pseudo </p>
-        <p> Tu es actuellement au rang $data->user_kind !</p>
-        <p> Tu as $data->biere bières et $data->bourse pièces !";
-    }
-    ?>
+include './gest_perso.php';
+?>
 <br>
+<a href="./gest_acc.php"><button>compte</button></a>
 
+<br>
+<a href="./chat.php"><button>Chat</button></a>
 
     </body>
 
