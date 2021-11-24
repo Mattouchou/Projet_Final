@@ -120,16 +120,17 @@
 <br>
 <br>
 <a href="./couloir.php" class="saut"><button>Vers le couloir</button></a> 
-<a href="#" class="buzz"><button>Déconnexion</button></a>
-
+<a href="./deco.php" class="buzz"><button>Déconnexion</button></a>
 <br>
 <br>
 <?php
 include './gest_perso.php';
 ?>
-    <a href="./gest_acc.php"><button>Mes Caractéristiques</button>
 <br>
+<a href="./gest_acc.php"><button>compte</button></a>
 
+<br>
+<a href="./chat.php"><button>Chat</button></a>
 
     </body>
 
