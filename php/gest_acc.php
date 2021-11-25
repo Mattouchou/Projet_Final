@@ -33,3 +33,7 @@ require './database.php';
 <?php
 include './gest_perso.php';
 ?>
+
+<?php
+include './race.php';
+?>

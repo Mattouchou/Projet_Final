@@ -36,7 +36,7 @@ include './head.php'
         width: 200px;
         border-radius: 48px;
         margin-top: 9px;
-        margin-left: 15px;
+        margin-left: 23px;
     }
 
     p {
@@ -125,12 +125,12 @@ include './head.php'
 <br>
 <a href="./couloir.php" class="saut"><button>Vers le couloir</button></a> 
 <a href="./deco.php" class="buzz"><button>Déconnexion</button></a>
-
 <br>
 <br>
 <?php
 include './gest_perso.php';
 ?>
+<br>
 <br>
     <a href="./gest_acc.php"><button>Mes Caractéristiques</button></a>
 <br>
