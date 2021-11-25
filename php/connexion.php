@@ -1,3 +1,7 @@
+<?php 
+include './head.php'
+?>
+
 <style>
     @font-face {
         font-family: "Olondon";

@@ -1,21 +1,34 @@
 <?php
 require './database.php';
 ?>
+<style>
+  @font-face {
+        font-family: "Olondon";
+        src: url("../fonts/Olondon_.otf");
+    }
+
+    @font-face {
+        font-family: "Seagram";
+        src: url("../fonts/Seagramtfb.ttf");
+    }
+
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+    body {
+        background-image: url(../médias/photos/parchemin.jpg);
+        position: fixed;
+        right: 0;
+        bottom: 0;
+        min-width: 100%;
+        width: auto;
+        height: auto;
+        z-index: -100;
+        background-size: cover;
+    }
+</style>
 <?php
-session_start()
+include './gest_perso.php';
 ?>
-<?=$_SESSION['pseudo'] ?>
-<br>
-<?=$_SESSION['user_kind'] ?>
-<br>
-<?=$_SESSION['biere'] ?>
-<br>
-<?=$_SESSION['bourse'] ?>
-</div>
-<body background="../médias/photos/image.jpg">
-<form action="./upload_avatar.php" method="POST" enctype="multipart/form-data">
-    <label> Avatar : </label>
-    <input type="file" name="avatar"/>
-    <button type="submit">Inserez votre photo de bouffon</button>
-   </form> 
- </body>

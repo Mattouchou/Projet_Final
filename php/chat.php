@@ -1,5 +1,24 @@
-<?php
-include './gest_perso.php';
+<style>
+    @font-face {
+        font-family: "Olondon";
+        src: url("../fonts/Olondon_.otf");
+    }
+
+    @font-face {
+        font-family: "Seagram";
+        src: url("../fonts/Seagramtfb.ttf");
+    } 
+
+    legend {
+        font-family: "Olondon";
+        border-radius: 10%;
+        background-color: indianred;
+        font-size: 31px;
+    }
+</style>
+
+<?php 
+include './head.php'
 ?>
 <legend>Parlez entre vous, les chiens galeux</legend>
 

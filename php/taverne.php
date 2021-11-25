@@ -1,3 +1,7 @@
+<?php 
+include './head.php'
+?>
+
 <style>
     
     @font-face {
@@ -111,7 +115,7 @@
 
 </style>
 
-<video autoplay muted loop style id="test">
+<video autoplay loop playsinline id="test">
 
     <source src="../médias/video/Medieval Fantasy Tavern  D&D Fantasy Music and Ambience.mp4" type="video/mp4"></video>
 
@@ -120,17 +124,22 @@
 <br>
 <br>
 <a href="./couloir.php" class="saut"><button>Vers le couloir</button></a> 
-<a href="#" class="buzz"><button>Déconnexion</button></a>
+<a href="./deco.php" class="buzz"><button>Déconnexion</button></a>
 
 <br>
 <br>
 <?php
 include './gest_perso.php';
 ?>
-    <a href="./gest_acc.php"><button>Mes Caractéristiques</button>
 <br>
-
-
+    <a href="./gest_acc.php"><button>Mes Caractéristiques</button></a>
+<br>
+<br>
+<div class="chat_room">
+<?php
+include './chat.php';
+?>
+</div>
     </body>
 
     </html>
