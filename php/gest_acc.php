@@ -29,6 +29,7 @@ require './database.php';
         background-size: cover;
     }
 </style>
+
 <?php
 include './gest_perso.php';
 ?>
