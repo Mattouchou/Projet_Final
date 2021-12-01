@@ -7,7 +7,12 @@ if(!empty($_POST)){
   }
   if(empty($errors)){
     require './database.php';
-  $req = $pdo->prepare('INSERT INTO discut SET mess = ?, creadate = NOW()');
+    $username = $_SESSION['pseudo'];
+    $req2 = $pdo->prepare('SELECT id FROM users WHERE pseudo ="'.$username.'"');
+    $req2->execute();
+    $res = $req2->fetch();
+    $idinscrit = $res;
+    $req = $pdo->prepare('INSERT INTO discut SET idinscrit = '.$idinscrit->id.',mess = ?, creadate = NOW()');
   $req->execute([$_POST['mess']]);
 }
 else{
@@ -94,12 +99,22 @@ include './head.php'
             <div>
                 <br>
                 <?php
+    require './database.php';
 
-        $req = $pdo->query('SELECT * FROM discut');
-        while($data = $req->fetch()){
-            echo "<h2>$username :</h2><br><h1>$data->mess</h1><br><h4>$data->creadate</h4><br>";
-        }
-        ?>
+    $req = $pdo->prepare("SELECT users.pseudo, discut.mess, discut.creadate
+    FROM users 
+    JOIN discut
+    ON users.id = discut.idinscrit");
+    $req->execute();
+
+    $resultat = $req->fetchAll();
+    foreach($resultat as $value){
+       
+        echo "<h2> $value->pseudo :</h2><br><h1>$value->mess</h1><br><h4>$value->creadate</h4><br>";
+
+   
+    }
+    ?>
             </div>
             <div class="text">
                 <br>
