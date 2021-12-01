@@ -12,8 +12,9 @@ if(isset($_SESSION['pseudo']));
     $username = $_SESSION['pseudo'];
     $req = $pdo->query("SELECT * FROM users WHERE pseudo = '$username'");
     while($data = $req->fetch()){
-        echo "<p> Bonjour $data->pseudo </p>
-        <p> Tu es actuellement au rang $data->user_kind !</p>
-        <p> Tu as $data->biere bières et $data->bourse pièces !";
+        echo "<div class='text'>
+        <p>Bonjour $data->pseudo<br>
+        Tu es actuellement au rang $data->user_kind !
+        Tu as $data->biere bières <img src='../médias/photos/Icônes.png'> $data->bourse pièces <img src='../médias/photos/Argent.png'></p></div>";
     }
     ?>

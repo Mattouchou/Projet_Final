@@ -31,6 +31,7 @@ else{
         font-size: 28px;
         width: 400px;
         text-align: center;
+        
     }
 
     form .mess {
@@ -39,10 +40,10 @@ else{
         border-radius: 10%;
         background-color: #A36236;
         width: 412px;
-        margin-left: auto;
-        bottom: 300px;
+        margin-left: 950px;
         position: relative;
         margin-right: 303px;
+        bottom: 805px !important;
         
     }
 
@@ -64,6 +65,13 @@ else{
     h4 {
         font-size: 13px;
     }
+
+    #mess {
+        background-color: #705747;
+        border: 0px;
+        width: 372;
+        font-family: "Olondon";
+    }    
 </style>
 
 <?php 
@@ -95,13 +103,15 @@ include './head.php'
             </div>
             <div class="text">
                 <br>
-                <label for="message"> Entre ton message...</label><br>
+                <label for="message"> Entre ton message...</label>
+                <br>
+                <br>
                 <textarea name="mess" id="mess"></textarea>
 
                 <div class="bouton">
                     <br>
 
-                    <button type="submit">Poster </button>
+                    <button type="submit">Poster</button>
                     <br>
                     <br>
                 </div>

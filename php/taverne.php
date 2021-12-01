@@ -32,8 +32,15 @@ include './head.php'
         background-size: cover;
     }
 
-    img {
+    .logo img {
         width: 200px;
+        border-radius: 48px;
+        margin-top: 9px;
+        margin-left: 23px;
+    }
+
+    img {
+      width: 126px;
         border-radius: 48px;
         margin-top: 9px;
         margin-left: 23px;
@@ -45,6 +52,8 @@ include './head.php'
         background-color: #A36236;
         width: 258px;
         text-align: center;
+        padding-bottom: 60px;
+  
     }
     
     button{
@@ -53,6 +62,20 @@ include './head.php'
         font-size: 22px;
         background-color: #F08f4f;
     }
+    .gauche {
+        width: 16%;
+        height: 100vh;
+    }
+    .milieu {
+        width: 60%;
+        height: 100vh;
+    }
+    .contenu {
+        width: 100%;
+        height: 90vh;
+    }
+
+
 
 /*Animation sur le bouton déconnexion*/
 @keyframes hvr-buzz {
@@ -113,14 +136,44 @@ include './head.php'
   animation-iteration-count: 1;
 }
 
+@-webkit-keyframes hvr-pulse {
+  25% {
+    transform: scale(1.1);
+  }
+  75% {
+    transform: scale(0.9);
+  }
+}
+@keyframes hvr-pulse {
+  25% {
+    transform: scale(1.1);
+  }
+  75% {
+    transform: scale(0.9);
+  }
+}
+.zoom {
+  display: inline-block;
+  vertical-align: middle;
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  margin-left: 32px;
+}
+.zoom:hover, .zoom:focus, .zoom:active {
+  animation-name: hvr-pulse;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
 </style>
 
-<video autoplay loop playsinline id="test">
-
+<video autoplay loop playsinline muted id="test">
     <source src="../médias/video/Medieval Fantasy Tavern  D&D Fantasy Music and Ambience.mp4" type="video/mp4"></video>
-
-<a href="#"><img src="../médias/photos/Lhydromel_des_gueux.png"></a>
-
+<div class="gauche">
+    <div class="logo">
+<a href="./taverne.php"><img src="../médias/photos/Lhydromel_des_gueux.png"></a>
+</div>
 <br>
 <br>
 <a href="./couloir.php" class="saut"><button>Vers le couloir</button></a> 
@@ -130,16 +183,14 @@ include './head.php'
 <?php
 include './gest_perso.php';
 ?>
-<br>
-<br>
-    <a href="./gest_acc.php"><button>Mes Caractéristiques</button></a>
-<br>
-<br>
-<div class="chat_room">
+<a href="./gest_acc.php" class="zoom"><button>Mes Caractéristiques</button></a>
+</div>
+<div class="milieu">
+  <div class="contenu">
 <?php
 include './chat.php';
 ?>
 </div>
+</div>
     </body>
-
     </html>
